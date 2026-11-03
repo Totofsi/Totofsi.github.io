@@ -1,0 +1,13 @@
+Gruppierung,X_pips,Seite,Perzentil,Spearman_H1_H2,Teilung_bei
+hour_server,10,Long,90,-0.21,2025-09-08
+hour_server,10,Short,90,0.05,2025-09-08
+hour_server,10,Long,99,0.3,2025-09-08
+hour_server,10,Short,99,0.4,2025-09-08
+session,10,Long,90,0.5,2025-09-08
+session,10,Short,90,-0.21,2025-09-08
+session,10,Long,99,0.3,2025-09-08
+session,10,Short,99,0.6,2025-09-08
+weekday,10,Long,90,-0.67,2025-09-08
+weekday,10,Short,90,-0.2,2025-09-08
+weekday,10,Long,99,0.9,2025-09-08
+weekday,10,Short,99,0.3,2025-09-08

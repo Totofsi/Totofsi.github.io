@@ -1,0 +1,8 @@
+# Rohdaten (groß) nicht versionieren – Herkunft/Prüfsummen schon
+data/raw/**/*.csv
+data/raw/**/*.parquet
+!data/raw/**/symbol_specs.csv
+!data/raw/**/spreads_summary.csv
+data/processed/
+__pycache__/
+*.pyc

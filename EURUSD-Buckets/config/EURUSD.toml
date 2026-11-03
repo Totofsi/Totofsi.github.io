@@ -1,0 +1,50 @@
+# Marktkonfiguration – EURUSD
+# Für einen neuen Markt (GBPUSD, Indizes …) diese Datei kopieren und anpassen.
+
+[market]
+symbol      = "EURUSD"
+pip_size    = 0.0001        # 1 Pip in Preiseinheiten
+digits      = 5
+
+[time]
+# Zeitzone der Rohdaten-Zeitstempel. MT5-Exporte liefern Serverzeit.
+# Eightcap-Server: GMT+2 (Winter) / GMT+3 (Sommer, US-DST) = "NY-Close-Zeit".
+# Wird als Pseudo-Zone "SERVER_NY_PLUS_7" behandelt (New York + 7 h).
+data_timezone   = "SERVER_NY_PLUS_7"   # oder "UTC" für UTC-Daten
+server_timezone = "SERVER_NY_PLUS_7"
+local_timezone  = "Europe/Berlin"      # MEZ/MESZ
+
+[sessions]
+# Session-Fenster in der jeweiligen Ortszeit (Stunden, [start, ende) ).
+tokyo_tz    = "Asia/Tokyo"
+tokyo       = [9, 18]
+london_tz   = "Europe/London"
+london      = [8, 17]
+newyork_tz  = "America/New_York"
+newyork     = [8, 17]
+# Rollover-Fenster in Serverzeit (Stunde 23 bis 01)
+rollover_server_hours = [23, 0]
+
+[measurement]
+targets_pips      = [3, 5, 10, 20]       # X in Messung 1
+percentiles       = [50, 90, 95, 99, 99.9]
+entry_every_min   = 1                    # Einstieg zu jeder vollen Minute
+max_horizon_days  = 30                   # Kappung der Vorwärtssuche (zensiert)
+zigzag_pips       = [10, 20]             # Messung 6
+top_n_extremes    = 20
+vr_horizons_min   = [1, 5, 15, 60]       # Messung 5
+mr_windows_min    = [60, 240]            # Mittelwert-Fenster für Halbwertszeit
+shuffle_seed      = 12345
+gap_minutes       = 5                    # Lücke > x min innerhalb Handelszeit = Datenlücke
+spread_spike_pips = 5.0                  # Spread > x Pips = Spitze
+
+[costs]
+# Kommission in Kontowährung je 1.0 Lot und Seite. MUSS aus Eightcap-Kontodaten
+# (Deal-Historie / Vertragsspezifikation) belegt werden – siehe data/reference/.
+# Solange nicht belegt: leer lassen (nan) -> Bericht weist Kommission als OFFEN aus.
+commission_per_lot_per_side = nan
+account_currency            = "USD"
+contract_size               = 100000
+# Szenarien nur zur Darstellung der Formel, NICHT als Annahme (im Bericht gekennzeichnet)
+commission_scenarios_rt_usd = [0.0, 5.0, 7.0]
+cost_share_thresholds       = [0.20, 0.30, 0.50]

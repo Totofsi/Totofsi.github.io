@@ -1,0 +1,25 @@
+Fenster_min,Reihe,Session,beta,Halbwertszeit_min
+60,real,Alle,0.97228,24.7
+60,real,Asien,0.97357,25.9
+60,real,London,0.97253,24.9
+60,real,Überlappung LDN/NY,0.97113,23.7
+60,real,New York,0.97122,23.7
+60,real,Spät/Rollover,0.97715,30.0
+60,Zufallspfad,Alle,0.97466,27.0
+60,Zufallspfad,Asien,0.97417,26.5
+60,Zufallspfad,London,0.97521,27.6
+60,Zufallspfad,Überlappung LDN/NY,0.97508,27.5
+60,Zufallspfad,New York,0.97458,26.9
+60,Zufallspfad,Spät/Rollover,0.97451,26.8
+240,real,Alle,0.99286,96.7
+240,real,Asien,0.99315,100.8
+240,real,London,0.993,98.7
+240,real,Überlappung LDN/NY,0.99242,91.1
+240,real,New York,0.99255,92.7
+240,real,Spät/Rollover,0.99467,129.6
+240,Zufallspfad,Alle,0.99378,111.1
+240,Zufallspfad,Asien,0.99342,105.0
+240,Zufallspfad,London,0.99388,113.0
+240,Zufallspfad,Überlappung LDN/NY,0.99412,117.5
+240,Zufallspfad,New York,0.99361,108.1
+240,Zufallspfad,Spät/Rollover,0.99428,120.9
